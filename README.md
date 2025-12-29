@@ -131,21 +131,5 @@ Aplikácia splnila všetky hlavné ciele a väčšinu vedľajších cieľov. Bol
 
 Práca mala veľký prínos pre rozvoj programátorských schopností a lepšie pochopenie tvorby komplexných Android aplikácií.
 
----
 
-## Zoznam použitej literatúry
 
-1. Android Studio – Wikipedia  
-2. Firebase – Wikipedia  
-3. Android Studio Tutorial – Chat Application with Firebase  
-4. Android Developers  
-
----
-
-## Prílohy
-
-Priložené CD obsahuje:
-- dokumentáciu v elektronickej podobe
-- predchádzajúce verzie projektu
-- skompilovaný projekt pre užívateľa
-- skompilovaný projekt pre vývojára
