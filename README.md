@@ -11,18 +11,18 @@ Užívateľ si takisto môže zmeniť svoj profilový obrázok. Ak má užívate
 ## Stanovenie cieľov práce
 
 ### Hlavné ciele
-- Sprostredkovanie konverzácie medzi dvoma užívateľmi  
-- Vytvoriť jednoduché a príjemné grafické prostredie  
-- Možnosť zmeny profilového obrázka  
-- Komunikácia prostredníctvom Bluetooth  
-- Online alebo offline status užívateľa  
+- Sprostredkovanie konverzácie medzi dvoma užívateľmi
+- Vytvoriť jednoduché a príjemné grafické prostredie
+- Možnosť zmeny profilového obrázka
+- Komunikácia prostredníctvom Bluetooth
+- Online alebo offline status užívateľa
 
 ### Vedľajšie ciele
-- Zobrazenie počtu neprečítaných správ  
-- Umožniť posielanie obrázkov  
-- Umožniť posielanie súborov  
-- Zobrazenie poslednej správy  
-- Zobrazenie, či si daný užívateľ prečítal poslednú správu  
+- Zobrazenie počtu neprečítaných správ
+- Umožniť posielanie obrázkov
+- Umožniť posielanie súborov
+- Zobrazenie poslednej správy
+- Zobrazenie, či si daný užívateľ prečítal poslednú správu
 
 ---
 
@@ -31,15 +31,13 @@ Užívateľ si takisto môže zmeniť svoj profilový obrázok. Ak má užívate
 ### Vývojové nástroje
 
 #### Android Studio
-Android Studio je oficiálne vývojové prostredie pre operačný systém Android, postavené na IntelliJ IDEA. Je dostupné pre Windows, macOS a Linux. Podporuje jazyky Java, C++ a Kotlin a umožňuje vytváranie virtuálnych zariadení (emulátorov).
+Android Studio je oficiálne vývojové prostredie pre operačný systém Android, postavené na IntelliJ IDEA. Podporuje jazyky Java, C++ a Kotlin a umožňuje vytváranie virtuálnych zariadení (emulátorov).
 
 #### Firebase
-Firebase je platforma na vývoj mobilných a webových aplikácií, ktorú vlastní Google. Medzi hlavné služby patria:
+Firebase je platforma na vývoj mobilných a webových aplikácií. Medzi hlavné služby patria:
 - Firebase Realtime Database
 - Firebase Authentication
 - Firebase Storage
-
-Firebase využíva viac ako 1,5 milióna aplikácií.
 
 ---
 
@@ -53,8 +51,6 @@ Aplikácia bola vytvorená pre operačný systém Android a je napísaná v prog
 
 Po spustení aplikácie sa zobrazí aktivita s tromi tlačidlami: prihlásenie, registrácia a Bluetooth. Registrácia vyžaduje meno, email a heslo. Autentifikácia je zabezpečená pomocou Firebase Authentication.
 
-Súčasťou aplikácie je aj možnosť resetovania hesla pomocou emailu.
-
 ---
 
 ## Toolbar
@@ -64,31 +60,31 @@ Toolbar obsahuje:
 - meno užívateľa
 - menu ikonu (odhlásenie)
 
-Profilový obrázok a meno sa načítavajú z Firebase databázy. Po otvorení chatu s iným užívateľom sa toolbar prepne na jeho údaje.
+Profilový obrázok a meno sa načítavajú z Firebase databázy.
 
 ---
 
 ## Panel Chat
 
-Panel Chat je vytvorený pomocou Fragmentu a slúži na zobrazenie zoznamu užívateľov, s ktorými má užívateľ aktívnu konverzáciu. Dáta sa načítavajú zo záznamu **Chatlist** vo Firebase databáze.
+Panel Chat je vytvorený pomocou Fragmentu a slúži na zobrazenie zoznamu užívateľov, s ktorými má užívateľ aktívnu konverzáciu.
 
-**Obrázok 1 – Panel Chat**
+![Panel Chat](pictures/obrazok1.png)
 
 ---
 
 ## Panel Užívatelia
 
-Zobrazuje zoznam všetkých registrovaných užívateľov okrem aktuálne prihláseného. Obsahuje vyhľadávacie pole, ktoré filtruje užívateľov podľa mena.
+Zobrazuje zoznam všetkých registrovaných užívateľov okrem aktuálne prihláseného. Obsahuje vyhľadávacie pole na filtrovanie užívateľov.
 
-**Obrázok 2 – Panel Užívatelia**
+![Panel Užívatelia](pictures/obrazok2.png)
 
 ---
 
 ## Panel Profil
 
-Obsahuje profilový obrázok a meno užívateľa. Umožňuje zmenu profilového obrázka, ktorý sa ukladá do Firebase Storage.
+Obsahuje profilový obrázok a meno užívateľa. Umožňuje zmenu profilového obrázka uloženého vo Firebase Storage.
 
-**Obrázok 3 – Panel Profil**
+![Panel Profil](pictures/obrazok3.png)
 
 ---
 
@@ -96,14 +92,14 @@ Obsahuje profilový obrázok a meno užívateľa. Umožňuje zmenu profilového 
 
 Slúži na zdieľanie obrázkov medzi všetkými užívateľmi. Obrázky sa ukladajú do Firebase Storage a ich URL adresy do databázy.
 
-**Obrázok 4 – Panel Obrázky**
+![Panel Obrázky](pictures/obrazok4.png)
 
 ---
 
 ## Užívateľ v zozname
 
 V zozname sa zobrazuje:
-- meno
+- meno užívateľa
 - profilový obrázok
 - online/offline status
 - posledná správa
@@ -113,25 +109,25 @@ V zozname sa zobrazuje:
 
 ## Chatovacia Aktivita
 
-Slúži na priamu komunikáciu medzi dvoma užívateľmi. Správy sa ukladajú do záznamu **Chats** vo Firebase databáze a obsahujú informáciu o odosielateľovi, prijímateľovi, texte správy a stave prečítania.
+Slúži na priamu komunikáciu medzi dvoma užívateľmi. Správy sa ukladajú do Firebase databázy a obsahujú informáciu o odosielateľovi, prijímateľovi a stave prečítania.
 
 ---
 
 ## Posielanie správ pomocou Bluetooth
 
-Aplikácia umožňuje offline komunikáciu pomocou Bluetooth. Zariadenia sa musia spárovať a správy sa následne zobrazujú v zozname spolu s názvom zariadenia.
+Aplikácia umožňuje offline komunikáciu pomocou Bluetooth. Zariadenia sa musia spárovať a správy sa zobrazujú v zozname správ.
 
 ---
 
 ## Diskusia výsledkov
 
-Aplikácia splnila všetky hlavné ciele a väčšinu vedľajších cieľov. Bola úspešne testovaná na viacerých Android zariadeniach. Do budúcna je možné rozšírenie o notifikácie, posielanie súborov, emotikony, hlasové a video hovory.
+Aplikácia splnila všetky hlavné ciele a väčšinu vedľajších cieľov. Bola úspešne testovaná na viacerých Android zariadeniach. Do budúcna je možné rozšírenie o notifikácie, posielanie súborov, emotikony či hlasové a video hovory.
 
 ---
 
 ## Záver
 
-Práca mala veľký prínos pre rozvoj programátorských schopností a pochopenie komplexných Android aplikácií, práce s databázou a Bluetooth komunikácie.
+Práca mala veľký prínos pre rozvoj programátorských schopností a lepšie pochopenie tvorby komplexných Android aplikácií.
 
 ---
 
@@ -144,3 +140,10 @@ Práca mala veľký prínos pre rozvoj programátorských schopností a pochopen
 
 ---
 
+## Prílohy
+
+Priložené CD obsahuje:
+- dokumentáciu v elektronickej podobe
+- predchádzajúce verzie projektu
+- skompilovaný projekt pre užívateľa
+- skompilovaný projekt pre vývojára
