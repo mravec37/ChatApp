@@ -68,7 +68,8 @@ Profilový obrázok a meno sa načítavajú z Firebase databázy.
 
 Panel Chat je vytvorený pomocou Fragmentu a slúži na zobrazenie zoznamu užívateľov, s ktorými má užívateľ aktívnu konverzáciu.
 
-![Panel Chat](pictures/obrazok1.png)
+<img src="pictures/obrazok1.png" height="400" alt="Panel Chat">
+
 
 ---
 
@@ -76,7 +77,7 @@ Panel Chat je vytvorený pomocou Fragmentu a slúži na zobrazenie zoznamu uží
 
 Zobrazuje zoznam všetkých registrovaných užívateľov okrem aktuálne prihláseného. Obsahuje vyhľadávacie pole na filtrovanie užívateľov.
 
-![Panel Užívatelia](pictures/obrazok2.png)
+<img src="pictures/obrazok2.png" height="400" alt="Panel Užívatelia">
 
 ---
 
@@ -84,7 +85,7 @@ Zobrazuje zoznam všetkých registrovaných užívateľov okrem aktuálne prihl�
 
 Obsahuje profilový obrázok a meno užívateľa. Umožňuje zmenu profilového obrázka uloženého vo Firebase Storage.
 
-![Panel Profil](pictures/obrazok3.png)
+<img src="pictures/obrazok3.png" height="400" alt="Panel Profil">
 
 ---
 
@@ -92,7 +93,8 @@ Obsahuje profilový obrázok a meno užívateľa. Umožňuje zmenu profilového 
 
 Slúži na zdieľanie obrázkov medzi všetkými užívateľmi. Obrázky sa ukladajú do Firebase Storage a ich URL adresy do databázy.
 
-![Panel Obrázky](pictures/obrazok4.png)
+
+<img src="pictures/obrazok4.png" height="400" alt="Panel Obrázky">
 
 ---
 
